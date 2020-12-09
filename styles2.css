@@ -59,6 +59,9 @@ h3 {
 
 .platos {
     width: auto;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
     height: 60vh;
     overflow:  scroll;
    
@@ -206,9 +209,49 @@ footer {
     .infoDetalle {
         width: 30vw;
     }
+    .total{
+        width: 70%;
+        justify-content: center;
+      }
+      footer {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+      }
+  
+      .primera-caja{
+          display: flex;
+          align-items: center;
+          
+      }
 
 
 
 }
 
+@media screen and (min-width:1200px){
+    .subtotal{
+        
+
+    }
+
+    .text{
+        
+    }
+    .total{
+      width: 70%;
+      justify-content: center;
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .primera-caja{
+        display: flex;
+        align-items: center;
+
+    }
+    }
 
