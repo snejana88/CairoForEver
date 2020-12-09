@@ -18,3 +18,7 @@ buttonRest.addEventListener("click", ()=>{
    
 })
 
+function showElement(elemento) {
+
+    console.log(elemento.parentElement)
+}
