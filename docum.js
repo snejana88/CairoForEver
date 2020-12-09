@@ -1,24 +1,18 @@
-
-const buttonSuma = document.getElementById("summar");
-const buttonRest = document.getElementById("restar");
-const textContador =document.getElementById("cuenta");
 let contador = 0
 
-
-buttonSuma.addEventListener("click", ()=>{
-    contador=contador+1;
-textContador.textContent= contador;
-
-})
-
-buttonRest.addEventListener("click", ()=>{
-   contador--;
-   textContador.textContent=contador;
-
-   
-})
-
 function showElement(elemento) {
-
-    console.log(elemento.parentElement)
+    let parent = elemento.parentElement;
+    let textContador = parent.querySelector("p");
+    let cuenta = parseInt(textContador.innerHTML);
+    cuenta++
+    textContador.textContent = cuenta
 }
+
+function restElement(elemento) {
+    let parent = elemento.parentElement;
+    let textContador = parent.querySelector("p");
+    let cuenta = parseInt(textContador.innerHTML);
+    cuenta--
+    textContador.textContent = cuenta
+}
+
