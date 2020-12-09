@@ -1,3 +1,4 @@
+
 const buttonSuma = document.getElementById("summar");
 const buttonRest = document.getElementById("restar");
 const textContador =document.getElementById("cuenta");
@@ -13,6 +14,7 @@ textContador.textContent= contador;
 buttonRest.addEventListener("click", ()=>{
    contador--;
    textContador.textContent=contador;
+
    
 })
 
