@@ -18,7 +18,9 @@
 <main>
     <h3> My cart</h3>
 
-    <div class="platos">
+    <div class="platos" id="items-platos">
+        
+        <!--
         <div class="infoPlatos">
         <img class ="image" src="./Images/pollo.jpg">
         <div class="infoDetalle">
@@ -98,6 +100,7 @@
                         </div>
                     </div>                                  
             </div>
+            -->
         </div>
 </main>
 
@@ -126,5 +129,21 @@
 
         </div>
 </footer>
+
+<template id="carta-plato">
+    <div class="infoPlatos">
+        <img class ="image" src="">
+            <div class="infoDetalle">
+                <p class="price">precio</p>
+                <h4>título</h4>
+                <p>detalles</p>
+                <div class="counter">
+                    <button id="restar" class="counterLeft" onclick="restElement(this)">-</button>
+                    <p>0</p>
+                    <button id="summar" class="counterRight" onclick="showElement(this)">+</button>
+                </div>
+            </div> 
+    </div>                                 
+</template>
 <script src="docum.js"></script>
 </body>
