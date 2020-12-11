@@ -3,7 +3,7 @@
       "precio": "10.00 €",
       "id": 1,
       "nombre": "England BreakfasT",
-      "detalles": " items-breakfas",
+      "detalles": "La versión completa incluye huevos, tocino, salchichas, frijoles, champiñones, empanadas de papa y tostadas. Y, por supuesto, no puede prescindir de una taza de café o té negro.",
       "imagen": "./imgBreakFast/england.jpg"
     },
     {
@@ -17,7 +17,7 @@
       "precio": "12.00 €",
       "id": 3,
       "nombre": "French",
-      "detalles": " Croissants, croissants y más croissants. Bueno, entonces, un vuelo completo de imaginación. Un relleno de almendras trituradas, chocolate o crema: no se puede estropear un buen croissant.",
+      "detalles": "Croissants, croissants y más croissants. Bueno, entonces, un vuelo completo de imaginación. Un relleno de almendras trituradas, chocolate o crema: no se puede estropear un buen croissant.",
       "imagen": "./imgBreakFast/french.jpg"
     },
     {

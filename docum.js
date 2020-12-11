@@ -1,16 +1,16 @@
 const itemsPlatos = document.getElementById("items-platos")
 const itemsBreakFast = document.getElementById("items-breakfast")
 const templatePlatos = document.getElementById("carta-plato").content
-const fragmentPlatos = document.createDocumentFragment()
-let carrito = {}
 const templateBreakFast = document.getElementById("temp-breakfast").content
+const fragmentPlatos = document.createDocumentFragment()
 const fragmentBreakFast = document.createDocumentFragment()
+let carrito = {}
 
 
 
 document.addEventListener('DOMContentLoaded', () =>{
     fetchDataPlatos()
-    fetchDataBreak()
+    fetchDataBreakFast()
 })
 
 const fetchDataPlatos = async() =>{
@@ -23,7 +23,7 @@ const fetchDataPlatos = async() =>{
     }
 }
 
-const fetchDataBreak = async() =>{
+const fetchDataBreakFast = async() =>{
     try {
         const resBreak = await fetch('breakfast.json')
         const dataBreak = await resBreak.json()
