@@ -1,37 +1,67 @@
-const items = document.getElementById("items-platos")
-const templatePlato = document.getElementById("carta-plato").content
-const fragment = document.createDocumentFragment()
+const itemsPlatos = document.getElementById("items-platos")
+const itemsBreakFast = document.getElementById("items-breakfast")
+const templatePlatos = document.getElementById("carta-plato").content
+const fragmentPlatos = document.createDocumentFragment()
 let carrito = {}
+const templateBreakFast = document.getElementById("temp-breakfast").content
+const fragmentBreakFast = document.createDocumentFragment()
 
 
 
 document.addEventListener('DOMContentLoaded', () =>{
-    fetchData()
+    fetchDataPlatos()
+    fetchDataBreak()
 })
 
-const fetchData = async() =>{
+const fetchDataPlatos = async() =>{
     try {
-        const res = await fetch('platos.json')
-        const data = await res.json()
-        mostrarPlatos(data)
+        const resPlatos = await fetch('platos.json')
+        const dataPlatos = await resPlatos.json()
+        mostrarPlatos(dataPlatos)
     } catch(error){
         console.log(error)
     }
 }
 
-const mostrarPlatos = data => {
+const fetchDataBreak = async() =>{
+    try {
+        const resBreak = await fetch('breakfast.json')
+        const dataBreak = await resBreak.json()
+        mostrarBreakFast(dataBreak)
+    } catch(error){
+        console.log(error)
+    }
+}
+const mostrarPlatos = dataPlatos => {
     data.forEach(plato =>{
-        templatePlato.querySelector(".infoDetalle h4").textContent = plato.nombre
-        templatePlato.querySelector(".infoDetalle p").textContent = plato.precio
-        templatePlato.querySelector('img').src = plato.imagen
+        templatePlatos.querySelector(".infoDetalle h4").textContent = plato.nombre
+        templatePlatos.querySelector(".infoDetalle p").textContent = plato.precio
+        templatePlatos.querySelector('img').src = plato.imagen
         
         
 
-        const clone = templatePlato.cloneNode(true)
-        fragment.appendChild(clone)
+        const clone = templatePlatos.cloneNode(true)
+        fragmentPlatos.appendChild(clone)
     })
-    items.appendChild(fragment)
+    itemsPlatos.appendChild(fragmentPlatos)
 }
+
+const mostrarBreakFast = dataBreak => {
+    data.forEach(BreakFast =>{
+        templateBreakFast.querySelector(".infoDetalle h4").textContent = BreakFast.nombre
+        templateBreakFast.querySelector(".infoDetalle p").textContent = BreakFast.precio
+        templateBreakFast.querySelector('img').src = BreakFast.imagen
+        
+        
+
+        const cloneBreakFast = templateBreakFast.cloneNode(true)
+        fragmentBreakFast.appendChild(cloneBreakFast)
+    })
+    itemsBreakFast.appendChild(fragmentBreakFast)
+}
+
+
+
 
 
 
