@@ -10,8 +10,8 @@
         "precio": "11.00 €",
         "id": 2,
         "nombre": "Columbiano",
-        "detalles": "Uno de los más populares es un plato llamado changua. Hecho con leche, chalotes y queso, Colombia tiene muchas opciones de desayuno para mantenerte con energía durante el día.",
-        "imagen": "https://picsum.photos/650/600"
+        "detalles": " Uno de los más populares es un plato llamado changua. Hecho con leche, chalotes y queso, Colombia tiene muchas opciones de desayuno para mantenerte con energía durante el día.",
+        "imagen": "./imgBreakFast/columbia.jpg"
     },
     {
       "precio": "12.00 €",
@@ -24,14 +24,14 @@
       "precio": "13.00 €",
       "id": 4,
       "nombre": "Hawai",
-      "detalles": "Es difícil imaginar a los hawaianos comiendo otra cosa que no sean frutas. Por supuesto, el desayuno incluye un panecillo, pero los hawaianos no deben temer a las calorías adicionales: desaparecerán en solo un par de minutos de surf.",
+      "detalles": " Es difícil imaginar a los hawaianos comiendo otra cosa que no sean frutas. Por supuesto, el desayuno incluye un panecillo, pero los hawaianos no deben temer a las calorías adicionales: desaparecerán en solo un par de minutos de surf.",
       "imagen": "./imgBreakFast/hawai.jpg"
     },
     {
       "precio": "12.00 €",
       "id": 5,
       "nombre": "Boliviano",
-      "detalles": "Saltena es un cruce entre empanada y empanada de Cornualles. Por lo general, se rellenan con carnes y verduras, con azúcar agregada para un sabor más sabroso",
+      "detalles": " Saltena es un cruce entre empanada y empanada de Cornualles. Por lo general, se rellenan con carnes y verduras, con azúcar agregada para un sabor más sabroso",
       "imagen": "./imgBreakFast/bolivia.jpg"
     },
     {

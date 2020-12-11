@@ -25,29 +25,31 @@
             <h1>Food  Home</h1>
             <p class="slogan">Lorem ipsum dolor sit amet consectetur </p>
             <div class="categorias">
-                <div class="contenedorCategorias">
+                <div class="contenedorCategorias categoria-breakfast">
                     <img src="./Images/breakfast.png">
                     <p>BreakFast</p>
                 </div>
-                <div class="contenedorCategorias">
+                <div class="contenedorCategorias categoria-fastfood">
                     <img src="./Images/fastfood.png">
                     <p>Fast Food</p>
                 </div>
-                <div class="contenedorCategorias">
+                <div class="contenedorCategorias categoria-dinner">
                     <img src="./Images/dinner.png">
                     <p>Dinner</p>
                 </div>
-                <div class="contenedorCategorias">
+                <div class="contenedorCategorias categoria-postres">
                     <img src="./Images/postres.png">
                     <p>Postres</p>
                 </div>
-                <div class="contenedorCategorias">
+                <div class="contenedorCategorias categoria-bebidas">
                     <img src="./Images/bebidas.png">
                     <p>Bebidas</p>
                 </div>
             </div>
 
+
             <div class="platos postres bebidas fastfood" id="items-breakfast">
+
   <!--              <div class="infoPlatos">
                     <img src="./Images/pollo.jpg">
                     <div class="infoDetalle">
@@ -159,6 +161,8 @@
                 </div>
         </template>
 
+
+
         <template id="temp-bebidas">
             <div class="infoPlatos">
                 <img src=" ">
@@ -204,11 +208,39 @@
                 </div>
         </template>
 
-       
+        <template id="temp-fastfood">
+            <div class="infoPlatos">
+                <img src=" ">
+                <div class="infoDetalle">
+                    <p class="price">price</p>
+                    <h4>nombre</h4>
+                    <p>detalles</p>
+                    <div class="counter">
+                        <button id="restar" class="counterLeft">-</button>
+                        <p id="cuenta">0</p>
+                        <button id="summar" class="counterRight">+</button>
+                    </div>
+                </div>
+        </template>
+
+        <template id="temp-alho2">
+            <div class="infoPlatos">
+                <img src=" ">
+                <div class="infoDetalle">
+                    <p class="price">price</p>
+                    <h4>nombre</h4>
+                    <p>detalles</p>
+                    <div class="counter">
+                        <button id="restar" class="counterLeft">-</button>
+                        <p id="cuenta">0</p>
+                        <button id="summar" class="counterRight">+</button>
+                    </div>
+                </div>
+        </template>
 
 
-
-        <script src="postres.js"></script>
+        <script src= "absolute.js"></script>
+        <script id= "relativejs" src="BreakFast.js"></script>
     </body>
 
 </html>
