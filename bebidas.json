@@ -11,7 +11,7 @@
       "id": 2,
       "nombre": "Te",
       "detalles": "Miel y canela",
-      "imagen": "https://picsum.photos/601/600"
+      "imagen": "./ImgBebidas/te-canela.jpg"
     },
     {
       "precio": "1.00€",
