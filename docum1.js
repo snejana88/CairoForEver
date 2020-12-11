@@ -1,20 +1,20 @@
-const items = document.getElementById("items-platos")
-const templatePlato = document.getElementById("carta-plato").content
-const fragment = document.createDocumentFragment()
+const itemsPlatos = document.getElementById("items-platos")
+const templatePlatos = document.getElementById("carta-plato").content
+const fragmentPlatos = document.createDocumentFragment()
 let carrito = {}
 
 
 
 document.addEventListener('DOMContentLoaded', () =>{
-    fetchData()
+    fetchDataPlatos()
 })
 
-const fetchData = async() =>{
+const fetchDataPlatos = async() =>{
     try {
-        const res = await fetch('platos.json')
-        const data = await res.json()
+        const resPlatos = await fetch('platos.json')
+        let data = await resPlatos.json()
         mostrarPlatos(data)
-        
+        console.log(data);
     } catch(error){
         console.log(error)
     }
@@ -22,16 +22,20 @@ const fetchData = async() =>{
 
 const mostrarPlatos = data => {
     data.forEach(plato =>{
-        templatePlato.querySelector(".infoDetalle h4").textContent = plato.nombre
-        templatePlato.querySelector(".infoDetalle p").textContent = plato.precio
-        templatePlato.querySelector('img').src = plato.imagen
+        templatePlatos.querySelector(".infoDetalle h4").textContent = plato.nombre
+        templatePlatos.querySelector(".infoDetalle p").textContent = plato.precio
+        templatePlatos.querySelector('img').src = plato.imagen
         
-    
-        const clone = templatePlato.cloneNode(true)
-        fragment.appendChild(clone)
+        
+
+        const clone = templatePlatos.cloneNode(true)
+        fragmentPlatos.appendChild(clone)
     })
-    items.appendChild(fragment)
+    itemsPlatos.appendChild(fragmentPlatos)
 }
+
+
+
 
 
 
