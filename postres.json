@@ -1,51 +1,51 @@
 [
     {
-      "precio": "$52.00",
+      "precio": "$12.00",
       "id": 1,
-      "nombre": "Arepa",
-      "detalles": "Lorem ipsum veni vide vici",
-      "imagen": "./Images/desayuno2.jpg"
+      "nombre": "Chocolatine ou pain au chocolat?",
+      "detalles": "Délice suprème !",
+      "imagen": "https://source.unsplash.com/900x900/?chocolate"
     },
     {
-      "precio": "$53.00",
+      "precio": "$3.00",
       "id": 2,
-      "nombre": "Ceviche",
-      "detalles": "Lorem ipsum veni vide vici",
-      "imagen": "https://picsum.photos/601/600"
+      "nombre": "Gelatto di Napoli",
+      "detalles": "Neanche Julio César",
+      "imagen": "https://source.unsplash.com/900x900/?icecream"
     },
     {
-      "precio": "$51.00",
+      "precio": "$8.00",
       "id": 3,
-      "nombre": "Lomo Saltado",
-      "detalles": "Lorem ipsum veni vide vici",
-      "imagen": "https://picsum.photos/600/601"
+      "nombre": "Alfajor cajamarquino",
+      "detalles": "Pasta rellena de manjarblanco",
+      "imagen": "https://source.unsplash.com/900x900/?dessert"
     },
     {
-      "precio": "$52.00",
+      "precio": "$6.00",
       "id": 4,
-      "nombre": "Lorem",
-      "detalles": "Lorem ipsum veni vide vici",
-      "imagen": "https://picsum.photos/602/601"
+      "nombre": "Mazamorra",
+      "detalles": "Dulce a base de maíz morado",
+      "imagen": "https://source.unsplash.com/900x900/?corn"
     },
     {
-      "precio": "$52.00",
+      "precio": "$10.00",
       "id": 5,
-      "nombre": "Lorem",
-      "detalles": "Lorem ipsum veni vide vici",
-      "imagen": "https://picsum.photos/500/600"
+      "nombre": "Tarta de fresa",
+      "detalles": "dulces como tus labios",
+      "imagen": "https://source.unsplash.com/900x900/?strawberry"
     },
     {
-      "precio": "$52.00",
+      "precio": "$5.00",
       "id": 6,
-      "nombre": "Lorem",
-      "detalles": "Lorem ipsum veni vide vici",
-      "imagen": "https://picsum.photos/550/600"
+      "nombre": "Cheesecake",
+      "detalles": "fromaaaaaaaaaaaaaage mon gars !",
+      "imagen": "https://source.unsplash.com/900x900/?cheesecake"
     },
     {
-      "precio": "$52.00",
+      "precio": "$14.00",
       "id": 7,
-      "nombre": "Lorem",
-      "detalles": "Lorem ipsum veni vide vici",
-      "imagen": "https://picsum.photos/650/600"
+      "nombre": "Arroz con leche",
+      "detalles": "me quiero casar",
+      "imagen": "https://source.unsplash.com/900x900/?rice"
     }
   ]
