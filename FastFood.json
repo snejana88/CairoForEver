@@ -2,50 +2,30 @@
     {
       "precio": "5.00 €",
       "id": 1,
-      "nombre": "Caramelo",
+      "nombre": "Hamburger",
       "detalles": "Cremoso cheesecake de dulce leche con cafe!",
-      "imagen": "./imgPostres/caramel.jpg"
+      "imagen": "./imgFastFood/hamburger.jpg"
     },
     {
       "precio": "5.00 €",
       "id": 2,
-      "nombre": "Velvet",
+      "nombre": "Empanadas",
       "detalles": "Rojo y blanco...con frutas",
-      "imagen": "./imgPostres/red.jpg"
+      "imagen": "./imgFastFood/empanadas.jpg"
     },
     {
       "precio": "5.00 €",
       "id": 3,
-      "nombre": "Choco",
+      "nombre": "Pizza",
       "detalles": "Chocolate, Fantasia ...",
-      "imagen": "./imgPostres/choco.jpg"
+      "imagen": "./imgFastFood/pizza.jpg"
     },
     {
       "precio": "5.00",
       "id": 4,
-      "nombre": "Gela",
+      "nombre": "Duner",
       "detalles": " Crema, fresa y gelatina ...",
-      "imagen": "./imgPostres/gelatin.jpg"
-    },
-    {
-      "precio": "5.00 €",
-      "id": 5,
-      "nombre": "Limonchelo",
-      "detalles": "Notas de limon ...",
-      "imagen": "./imgPostres/limon.jpg"
-    },
-    {
-      "precio": "5.00 €",
-      "id": 6,
-      "nombre": "CupCake",
-      "detalles": "Diferentes sabores",
-      "imagen": "./imgPostres/cucake.jpg"
-    },
-    {
-      "precio": "5.00 €",
-      "id": 7,
-      "nombre": "Crema",
-      "detalles": "Crema con fresas",
-      "imagen": "./imgPostres/fresa.jpg"
+      "imagen": "./imgFastFood/duner.jpg"
     }
+    
   ]
