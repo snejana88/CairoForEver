@@ -55,7 +55,7 @@
                         <h4>Chicken Veggi Salad</h4>
                         <p>With cheese souse</p>
                         <div class="counter">
-                            <button class="counterLeft"
+                            <button class="counterLeft" onclick="restElement(this)"
                             >-</button>
                             <p id="cuenta">0</p>
                             <button class="counterRight" onclick="showElement(this)"
@@ -70,13 +70,12 @@
                         <h4>Mutton Curry</h4>
                         <p>With basmati rice</p>
                         <div class="counter">
-                            <button class="counterLeft">-</button>
+                            <button class="counterLeft" onclick="restElement(this)">-</button>
                             <p id="cuenta">0</p>
                             <button id="summar" class="counterRight" onclick="showElement(this)"
                             >+</button>
                         </div>
                     </div>
-
                 </div>
                 <div class="infoPlatos">
                     <img src="./Images/burgerfast.jpg">
@@ -87,7 +86,7 @@
                         <div class="counter">
                             <button id="restar" class="counterLeft">-</button>
                             <p id="cuenta">0</p>
-                            <button id="summar" class="counterRight">+</button>
+                            <button id="summar" class="counterRight" onclick="showElement(this)">+</button>
                         </div>
                     </div>
 

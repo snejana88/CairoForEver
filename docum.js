@@ -14,6 +14,7 @@ const fetchData = async() =>{
         const res = await fetch('platos.json')
         const data = await res.json()
         mostrarPlatos(data)
+        
     } catch(error){
         console.log(error)
     }
@@ -25,8 +26,7 @@ const mostrarPlatos = data => {
         templatePlato.querySelector(".infoDetalle p").textContent = plato.precio
         templatePlato.querySelector('img').src = plato.imagen
         
-        
-
+    
         const clone = templatePlato.cloneNode(true)
         fragment.appendChild(clone)
     })
