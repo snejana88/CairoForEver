@@ -327,8 +327,8 @@ let menu =
 let stringMenu = " "
 
 function pintarMenu(){
-for(let i=0; i<menu.length; i++){
-    stringMenu=`<div class="infoPlatos">
+for(let i=0; i < menu.length; i++){
+    stringMenu+=`<div class="infoPlatos">
     <img src="${menu[i].imagen}"> <div class="infoDetalle">
     <p class="${menu[i].precio}"></p>
     <h4>"${menu[i].nombre}"</h4>
@@ -346,6 +346,6 @@ for(let i=0; i<menu.length; i++){
 }
 
 pintarMenu()
-document.querySelector(".menu").innerHTML = stringMenu
+document.querySelector(".menuPlato").innerHTML = stringMenu
 
 
