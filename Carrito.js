@@ -64,24 +64,19 @@ let contador = 0
 
 function showElement(elemento) {
     let parent = elemento.parentElement;
-    let grandParent= parent.parentElement;
     let textContador = parent.querySelector("p");
     let cuenta = parseInt(textContador.innerHTML);
     cuenta++
     textContador.textContent = cuenta
-    setCarrito(grandParent)
+ 
 }
 
 function restElement(elemento) {
     let parent = elemento.parentElement;
-    let grandParent= parent.parentElement;
     let textContador = parent.querySelector("p");
     let cuenta = parseInt(textContador.innerHTML);
     cuenta--
     textContador.textContent = cuenta
-    setCarrito(grandParent)
+
 }
 
-const setCarrito = objeto => {
-    console.log(objeto)
-}

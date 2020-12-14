@@ -22,14 +22,14 @@ const fetchDatabebidas= async() =>{
 
 const mostrarBebidas = data => {
     data.forEach(Bebidas=>{
-        templateBreakFast.querySelector(".infoDetalle h4").textContent = BreakFast.nombre
-        templateBreakFast.querySelector(".infoDetalle p").textContent = BreakFast.precio
-        templateBreakFast.querySelector('img').src = BreakFast.imagen
+        templatebebidas.querySelector(".infoDetalle h4").textContent = Bebidas.nombre
+        templatebebidas.querySelector(".infoDetalle p").textContent = Bebidas.precio
+        templatebebidas.querySelector('img').src = Bebidas.imagen
         
         
 
         const cloneBebidas = templatebebidas.cloneNode(true)
-        fragmentbebidas.appendChild(clonebebidas)
+        fragmentbebidas.appendChild(cloneBebidas)
     })
     itemsbebidas.appendChild(fragmentbebidas)
 }

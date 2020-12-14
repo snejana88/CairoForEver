@@ -1,4 +1,4 @@
-const itemsFastFood = document.getElementsByClassName("fastfood")
+const itemsFastFood = document.querySelector(".fastfood")
 const templateFastFood = document.getElementById("temp-fastfood").content
 const fragmentFastFood = document.createDocumentFragment()
 let carrito = {}
