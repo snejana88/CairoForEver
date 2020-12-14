@@ -29,6 +29,7 @@ function pintarCategorias(){
         <img src="${categorias[i].imagenCategoria}">
         <p>${categorias[i].nombreCategoria}</p>
     </div>`
+    
     }
 }
 
