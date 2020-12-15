@@ -334,16 +334,17 @@ for(let i=0; i<menu.length; i++){
     <p class="${menu[i].precio}"></p>
     <h4>${menu[i].nombre}</h4>
     <p>"${menu[i].detalles}"</p>
-        <div class="counter">
+        <div class="counter" data-numero= "${[i]}">
             <button class="counterLeft" onclick="restElement(this)"
             >-</button>
             <p id="cuenta">0</p>
-            <button class="counterRight" onclick="showElement(this)"
+            <button class="counterRight" onclick="addElement(this)"
             >+</button>
         </div>
     </div>
 </div> `
 }
+
 }
 
 pintarMenu()
@@ -374,7 +375,7 @@ function showMe(elemento){
               <button class="counterLeft" onclick="restElement(this)"
               >-</button>
               <p id="cuenta">0</p>
-              <button class="counterRight" onclick="showElement(this)"
+              <button class="counterRight" onclick="addElement(this)"
               >+</button>
           </div>
       </div>
@@ -395,9 +396,6 @@ document.querySelector(".platos").innerHTML = stringFilter
 
 let scrollPlatos = document.querySelectorAll(".infoPlatos")
 
-
-//mmm prueba createelement div y mete scrollplatos dentro
-//ahora el problema es que no funcionca con el onclick... reset?
 ScrollReveal().reveal(scrollPlatos, {
   delay: 300,
   duration: 1000,
@@ -407,81 +405,3 @@ ScrollReveal().reveal(scrollPlatos, {
 })
 
 
-
-
-
-/*
-pintarFilter()
-document.querySelector(".platos").innerHTML = stringFilter
-
-*/
-
-
-
-
-
-
-
-/*
-let arrayBreakfast = menu.filter(plato => plato.id === nombrePlato)  
-    console.log(arrayBreakfast);
-    let stringBreakfast = " "
-
-      function pintarBreak(){
-      for(let i=0; i<arrayBreakfast.length; i++){
-          stringBreakfast +=`<div id="platoSelector" class="infoPlatos ${nombrePlato}">
-          <img src="${arrayBreakfast[i].imagen}"> 
-          <div class="infoDetalle ">
-          <p class="${arrayBreakfast[i].precio}"></p>
-          <h4>"${arrayBreakfast[i].nombre}"</h4>
-          <p>"${arrayBreakfast[i].detalles}"</p>
-              <div class="counter">
-                  <button class="counterLeft" onclick="restElement(this)"
-                  >-</button>
-                  <p id="cuenta">0</p>
-                  <button class="counterRight" onclick="showElement(this)"
-                  >+</button>
-              </div>
-          </div>
-      </div> `
-      }
-      }
-      
-      pintarBreak()
-      document.querySelector(".platos").innerHTML = stringBreakfast
-    */
-
-  /*for(let a = 0; a<platoClass.length; a++){
-  if(nombrePlato === platoClass){
-    let arrayFilter = menu.filter(plato => plato.id === nombrePlato)  
-    console.log(arrayFilter);
-    let stringFilter = " "
-
-      function pintarFilter(){
-      for(let i=0; i<arrayFilter.length; i++){
-          stringFilter +=`<div id="platoSelector" class="infoPlatos ${nombrePlato}">
-          <img src="${arrayFilter[i].imagen}"> 
-          <div class="infoDetalle ">
-          <p class="${arrayFilter[i].precio}"></p>
-          <h4>"${arrayFilter[i].nombre}"</h4>
-          <p>"${arrayFilter[i].detalles}"</p>
-              <div class="counter">
-                  <button class="counterLeft" onclick="restElement(this)"
-                  >-</button>
-                  <p id="cuenta">0</p>
-                  <button class="counterRight" onclick="showElement(this)"
-                  >+</button>
-              </div>
-          </div>
-      </div> `
-  }
-}
-}
-} */
-
-
-
-/*
-   for(let i = 0; i<platoSelector.classList.length; i++){
-    console.log(platoSelector.classList[i] === nombrePlato);
-  } */
