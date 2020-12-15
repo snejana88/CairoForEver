@@ -389,15 +389,16 @@ document.querySelector(".platos").innerHTML = stringMenu
 
 
 function showMe(elemento){
-  let nombrePlato = elemento.querySelector("p").textContent
-  console.log(nombrePlato);
+  //console.log(elemento);
+  let nombreCategoria = elemento.querySelector("p").textContent
+  console.log(nombreCategoria);
   
   let stringFilter = " "
 
   function pintarFilter(){
   
   for(let i=0; i<menu.length; i++){
-    if(nombrePlato === `${menu[i].id}`){
+    if(nombreCategoria === `${menu[i].id}`){
       stringFilter +=`<div class="infoPlatos ${menu[i].id}">
       <img src="${menu[i].imagen}"> 
       <div class="infoDetalle ">
@@ -413,12 +414,36 @@ function showMe(elemento){
           </div>
       </div>
   </div> `
-}
+} ScrollReveal().reveal(".platos", {
+  delay: 300,
+  duration: 1000,
+  origin: "top",
+  distance: "50px",
+});
 } 
 }
 pintarFilter()
 document.querySelector(".platos").innerHTML = stringFilter
+
+
 }
+
+let scrollPlatos = document.querySelectorAll(".infoPlatos")
+
+
+//mmm prueba createelement div y mete scrollplatos dentro
+//ahora el problema es que no funcionca con el onclick... reset?
+ScrollReveal().reveal(scrollPlatos, {
+  delay: 300,
+  duration: 1000,
+  origin: "top",
+  distance: "50px",
+  reset: true
+})
+
+
+
+
 
 /*
 pintarFilter()
