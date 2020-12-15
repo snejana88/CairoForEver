@@ -1,7 +1,7 @@
 let categorias = [
     {
        imagenCategoria: "./Images/breakfast.png",
-       nombreCategoria: "BreakFast",
+       nombreCategoria: "Breakfast",
     },
     {
        imagenCategoria: "./Images/fastfood.png",

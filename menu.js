@@ -217,7 +217,7 @@ let menu =
               },
               {
                 precio: "$3.00",
-                id: "postre",
+                id: "Postres",
                 nombre: "Gelatto di Napoli",
                 detalles: "Neanche Julio César",
                 imagen: "https://source.unsplash.com/900x900/?icecream",
@@ -225,7 +225,7 @@ let menu =
               },
               {
                 precio: "$8.00",
-                id: "postre",
+                id: "Postres",
                 nombre: "Alfajor cajamarquino",
                 detalles: "Pasta rellena de manjarblanco",
                 imagen: "https://source.unsplash.com/900x900/?dessert",
@@ -233,7 +233,7 @@ let menu =
               },
               {
                 precio: "$6.00",
-                id: "postre",
+                id: "Postres",
                 nombre: "Mazamorra",
                 detalles: "Dulce a base de maíz morado",
                 imagen: "https://source.unsplash.com/900x900/?corn",
@@ -241,7 +241,7 @@ let menu =
               },
               {
                 precio: "$10.00",
-                id: "postre",
+                id: "Postres",
                 nombre: "Tarta de fresa",
                 detalles: "dulces como tus labios",
                 imagen: "https://source.unsplash.com/900x900/?strawberry",
@@ -249,7 +249,7 @@ let menu =
               },
               {
                 precio: "$5.00",
-                id: "postre",
+                id: "Postres",
                 nombre: "Cheesecake",
                 detalles: "fromaaaaaaaaaaaaaage mon gars !",
                 imagen: "https://source.unsplash.com/900x900/?cheesecake",
@@ -257,7 +257,7 @@ let menu =
               },
               {
                 precio: "$14.00",
-                id:"postre",
+                id:"Postres",
                 nombre: "Arroz con leche",
                 detalles: "me quiero casar",
                 imagen: "https://source.unsplash.com/900x900/?rice",
@@ -266,7 +266,7 @@ let menu =
 
               {
                 precio: "$52.00",
-                id: "sopa",
+                id: "Dinner",
                 nombre: "Arepa",
                 detalles: "Lorem ipsum veni vide vici",
                 imagen: "./Images/desayuno2.jpg",
@@ -274,7 +274,7 @@ let menu =
               },
               {
                 precio: "$53.00",
-                id: "sopa",
+                id: "Dinner",
                 nombre: "Ceviche",
                 detalles: "Lorem ipsum veni vide vici",
                 imagen: "https://picsum.photos/601/600",
@@ -282,7 +282,7 @@ let menu =
               },
               {
                 precio: "$51.00",
-                id: "sopa",
+                id: "Dinner",
                 nombre: "Lomo Saltado",
                 detalles: "Lorem ipsum veni vide vici",
                 imagen: "https://picsum.photos/600/601",
@@ -290,7 +290,7 @@ let menu =
               },
               {
                 precio: "$52.00",
-                id: "sopa",
+                id: "Dinner",
                 nombre: "Lorem",
                 detalles: "Lorem ipsum veni vide vici",
                 imagen: "https://picsum.photos/602/601",
@@ -298,7 +298,7 @@ let menu =
               },
               {
                 precio: "$52.00",
-                id: "sopa",
+                id: "Dinner",
                 nombre: "Lorem",
                 detalles: "Lorem ipsum veni vide vici",
                 imagen: "https://picsum.photos/500/600",
@@ -306,7 +306,7 @@ let menu =
               },
               {
                 precio: "$52.00",
-                id: "sopa",
+                id: "Dinner",
                 nombre: "Lorem",
                 detalles: "Lorem ipsum veni vide vici",
                 imagen: "https://picsum.photos/550/600",
@@ -314,7 +314,7 @@ let menu =
               },
               {
                 precio: "$52.00",
-                id: "sopa",
+                id: "Dinner",
                 nombre: "Lorem",
                 detalles: "Lorem ipsum veni vide vici",
                 imagen: "https://picsum.photos/650/600",
@@ -328,7 +328,7 @@ let stringMenu = " "
 
 function pintarMenu(){
 for(let i=0; i<menu.length; i++){
-    stringMenu +=`<div id="platoSelector" class="infoPlatos ${menu[i].id}">
+    stringMenu +=`<div class="infoPlatos ${menu[i].id}">
     <img src="${menu[i].imagen}"> 
     <div class="infoDetalle ">
     <p class="${menu[i].precio}"></p>
@@ -356,16 +356,40 @@ document.querySelector(".platos").innerHTML = stringMenu
 function showMe(elemento){
   let nombrePlato = elemento.querySelector("p").textContent
   console.log(nombrePlato);
-  let platoSelector = document.getElementById("platoSelector")
-  console.log(platoSelector.classList);
-  for(let i = 0; i<platoSelector.classList.length; i++){
-    console.log(platoSelector.classList[i] === nombrePlato);
-  }
   
+  let stringFilter = " "
+
+  function pintarFilter(){
+  
+  for(let i=0; i<menu.length; i++){
+    if(nombrePlato === `${menu[i].id}`){
+      stringFilter +=`<div class="infoPlatos ${menu[i].id}">
+      <img src="${menu[i].imagen}"> 
+      <div class="infoDetalle ">
+      <p class="${menu[i].precio}"></p>
+      <h4>${menu[i].nombre}</h4>
+      <p>"${menu[i].detalles}"</p>
+          <div class="counter">
+              <button class="counterLeft" onclick="restElement(this)"
+              >-</button>
+              <p id="cuenta">0</p>
+              <button class="counterRight" onclick="showElement(this)"
+              >+</button>
+          </div>
+      </div>
+  </div> `
+}
+} 
+}
+pintarFilter()
+document.querySelector(".platos").innerHTML = stringFilter
 }
 
+/*
+pintarFilter()
+document.querySelector(".platos").innerHTML = stringFilter
 
-
+*/
 
 
 
@@ -401,3 +425,38 @@ let arrayBreakfast = menu.filter(plato => plato.id === nombrePlato)
       pintarBreak()
       document.querySelector(".platos").innerHTML = stringBreakfast
     */
+
+  /*for(let a = 0; a<platoClass.length; a++){
+  if(nombrePlato === platoClass){
+    let arrayFilter = menu.filter(plato => plato.id === nombrePlato)  
+    console.log(arrayFilter);
+    let stringFilter = " "
+
+      function pintarFilter(){
+      for(let i=0; i<arrayFilter.length; i++){
+          stringFilter +=`<div id="platoSelector" class="infoPlatos ${nombrePlato}">
+          <img src="${arrayFilter[i].imagen}"> 
+          <div class="infoDetalle ">
+          <p class="${arrayFilter[i].precio}"></p>
+          <h4>"${arrayFilter[i].nombre}"</h4>
+          <p>"${arrayFilter[i].detalles}"</p>
+              <div class="counter">
+                  <button class="counterLeft" onclick="restElement(this)"
+                  >-</button>
+                  <p id="cuenta">0</p>
+                  <button class="counterRight" onclick="showElement(this)"
+                  >+</button>
+              </div>
+          </div>
+      </div> `
+  }
+}
+}
+} */
+
+
+
+/*
+   for(let i = 0; i<platoSelector.classList.length; i++){
+    console.log(platoSelector.classList[i] === nombrePlato);
+  } */
