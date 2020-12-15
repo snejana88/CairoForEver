@@ -101,7 +101,10 @@ nav {
 
 .platos {
   width: auto;
-  padding-bottom: 65px;
+  padding-bottom: 65px; 
+  position:relative;
+  z-index: -10;
+  
 }
 .platos::-webkit-scrollbar {
   display: none;
@@ -113,6 +116,7 @@ nav {
   flex-wrap: nowrap;
   margin-bottom: 2vh;
   padding-left: 5%;
+  overflow-y: auto;
 }
 
 .infoPlatos img {
