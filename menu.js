@@ -370,10 +370,10 @@ for(let i=0; i<menu.length; i++){
     <h4>${menu[i].nombre}</h4>
     <p>"${menu[i].detalles}"</p>
         <div class="counter" data-numero= "${[i]}">
-            <button class="counterLeft" onclick="restarElemento(this)"
+            <button class="counterLeft" click="restarElemento(this)"
             >-</button>
             <p id="cuenta">0</p>
-            <button class="counterRight" onclick="sumarElemento(this)" 
+            <button class="counterRight" click="sumarElemento(this)" 
             >+</button>
         </div>
     </div>
