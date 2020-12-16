@@ -1,7 +1,46 @@
 function sumarElemento(elemento){
-    console.log(elemento);
+   let fatherElement= elemento.parentElement
+   let indexArray=fatherElement.dataset.numero;
+   let contador =fatherElement.querySelector("p").innerHTML
+   if(contador x += y x=y )
+
+   menu[indexArray].cantidad++
+   contador= menu[indexArray].cantidad;
+  
+    
 }
 
 function restarElemento(elemento){
-    console.log(elemento);
+    let fatherElement= elemento.parentElement
+    let indexArray=fatherElement.dataset.numero;
+    let contador =fatherElement.querySelector("p").innerHTML
+    if(contador x -= y x=y )
+
+    menu[indexArray].cantidad--
+    contador= menu[indexArray].cantidad;
+
+
+    
+    
 }
+
+/*function suma(objeto) {
+    let indicearray = objeto.parentElement.dataset.numero;
+    listaPlatos[indicearray].cantidad++
+    objeto.parentElement.querySelector("p").innerHTML = listaPlatos[indicearray].cantidad;
+  
+    addToCart(listaPlatos[indicearray])
+  } 
+  
+  function resta(objeto) {
+    let indicearray = objeto.parentElement.dataset.numero;
+      if (listaPlatos[indicearray].cantidad > 0) {
+      listaPlatos[indicearray].cantidad--
+      objeto.parentElement.querySelector("p").innerHTML = listaPlatos[indicearray].cantidad;
+    }
+  } 
+  
+  function addToCart(itemPlato) {
+  if (itemPlato.cantidad == 1)
+          carritoDeCompra.push(itemPlato)
+  }*/
