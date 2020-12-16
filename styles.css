@@ -102,8 +102,7 @@ nav {
 .platos {
   width: auto;
   padding-bottom: 65px; 
-  position:relative;
-  z-index: -10;
+
   
 }
 .platos::-webkit-scrollbar {

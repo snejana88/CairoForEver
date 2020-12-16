@@ -370,18 +370,28 @@ for(let i=0; i<menu.length; i++){
     <h4>${menu[i].nombre}</h4>
     <p>"${menu[i].detalles}"</p>
         <div class="counter" data-numero= "${[i]}">
+<<<<<<< HEAD
             <button class="counterLeft" click="restarElemento(this)"
             >-</button>
             <p id="cuenta">0</p>
             <button class="counterRight" click="sumarElemento(this)" 
             >+</button>
+=======
+            <button class="counterLeft" onclick="restarElemento(this)"
+            >--</button>
+            <p id="cuenta">0</p>
+            <button class="counterRight" onclick="sumarElemento(this)" 
+            >++</button>
+>>>>>>> 338f46ee5d7d5cb4c638ddd935a13978c242e661
         </div>
     </div>
 </div> `
 }
 }
 
+
 pintarMenu();
 document.querySelector(".platos").innerHTML = stringMenu
+
 
 
