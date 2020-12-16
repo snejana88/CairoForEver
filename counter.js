@@ -1,7 +1,7 @@
-function restarElemento(objeto){
-    console.log(objeto)
-}
+let btnSumar = document.querySelector(".counterRight")
 
-function sumarElemento(objeto){
-    console.log(objeto)
-}
+//console.log(btnSumar);
+
+btnSumar.onclick = function sumarElement() {
+    return this;
+};

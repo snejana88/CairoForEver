@@ -1,6 +1,6 @@
 
 function showMe(elemento){
-    //console.log(elemento);
+    console.log(elemento);
     let nombreCategoria = elemento.querySelector("p").textContent
     console.log(nombreCategoria);
     

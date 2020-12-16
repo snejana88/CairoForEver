@@ -379,7 +379,6 @@ for(let i=0; i<menu.length; i++){
     </div>
 </div> `
 }
-
 }
 
 pintarMenu();
