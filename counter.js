@@ -1,10 +1,8 @@
 function sumarElemento(elemento){
    let fatherElement= elemento.parentElement
    let indexArray= fatherElement.dataset.numero;
-   let contador = fatherElement.querySelector("p")
-  console.log(contador);
 
-   if(contador<=10){
+   if(fatherElement.querySelector("p").innerHTML<10){
     menu[indexArray].cantidad++
     fatherElement.querySelector("p").innerHTML = menu[indexArray].cantidad;
    }
@@ -14,13 +12,17 @@ function sumarElemento(elemento){
 function restarElemento(elemento){
     let fatherElement= elemento.parentElement
     let indexArray=fatherElement.dataset.numero;
-    let contador =fatherElement.querySelector("p").innerHTML
     
-    if(contador>=0){
+    if(fatherElement.querySelector("p").innerHTML>0){
         menu[indexArray].cantidad--
-        contador= menu[indexArray].cantidad;
+        fatherElement.querySelector("p").innerHTML= menu[indexArray].cantidad;
     }
-   
+}
+
+function añadirCarrito(plato){
+    if(plato.cantidad == 1){
+        carritoArray.push(plato)
+    }
 }
 
 /*function suma(objeto) {
