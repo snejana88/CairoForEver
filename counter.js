@@ -2,7 +2,7 @@ function sumarElemento(elemento){
    let fatherElement= elemento.parentElement
    let indexArray=fatherElement.dataset.numero;
    let contador =fatherElement.querySelector("p").innerHTML
-   if(contador x += y x=y )
+  
 
    menu[indexArray].cantidad++
    contador= menu[indexArray].cantidad;
@@ -14,8 +14,8 @@ function restarElemento(elemento){
     let fatherElement= elemento.parentElement
     let indexArray=fatherElement.dataset.numero;
     let contador =fatherElement.querySelector("p").innerHTML
-    if(contador x -= y x=y )
-
+    
+   
     menu[indexArray].cantidad--
     contador= menu[indexArray].cantidad;
 
