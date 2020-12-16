@@ -371,17 +371,19 @@ for(let i=0; i<menu.length; i++){
     <p>"${menu[i].detalles}"</p>
         <div class="counter" data-numero= "${[i]}">
             <button class="counterLeft" onclick="restarElemento(this)"
-            >-</button>
+            >--</button>
             <p id="cuenta">0</p>
             <button class="counterRight" onclick="sumarElemento(this)" 
-            >+</button>
+            >++</button>
         </div>
     </div>
 </div> `
 }
 }
 
+
 pintarMenu();
 document.querySelector(".platos").innerHTML = stringMenu
+
 
 
