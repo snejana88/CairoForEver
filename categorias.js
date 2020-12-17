@@ -25,7 +25,7 @@ let stringCategorias = " "
 
 function pintarCategorias(){
     for(let i = 0; i < categorias.length; i++){
-        stringCategorias += `<div class="contenedorCategorias" onclick="showMe(this)" >
+        stringCategorias += `<div class="contenedorCategorias" onclick="showMe(this)"  data-category="${categorias[i].nombreCategoria}">
         <img src="${categorias[i].imagenCategoria}" >
         <p >${categorias[i].nombreCategoria}</p>
     </div>`

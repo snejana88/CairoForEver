@@ -1,8 +1,7 @@
-
 function showMe(elemento){
-    console.log(elemento);
-    let nombreCategoria = elemento.querySelector("p").textContent
-    console.log(nombreCategoria);
+
+    let nombreCategoria = elemento.dataset.category
+
     
     let stringFilter = " "
   
