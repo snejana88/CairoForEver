@@ -14,7 +14,7 @@ let menu =
           categoria: "Bebidas",
           nombre: "Te",
           detalles: "Miel y canela",
-          imagen: ".https://source.unsplash.com/900x900/?tea",
+          imagen: "https://source.unsplash.com/900x900/?tea",
           cantidad: 0,
           id: 1,
 
