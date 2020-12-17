@@ -5,7 +5,7 @@ let menu =
           categoria: "Bebidas",
           nombre: "Cafe",
           detalles: "Sabores diferentes, fueres y suaves...",
-          imagen: "./ImgBebidas/cafe.jpg",
+          imagen: "https://source.unsplash.com/901x900/?coffee",
           cantidad: 0,
           id: 0,
         },
@@ -14,7 +14,7 @@ let menu =
           categoria: "Bebidas",
           nombre: "Te",
           detalles: "Miel y canela",
-          imagen: "./ImgBebidas/te-canela.jpg",
+          imagen: ".https://source.unsplash.com/900x900/?tea",
           cantidad: 0,
           id: 1,
 
@@ -371,10 +371,10 @@ for(let i=0; i<menu.length; i++){
     <p>"${menu[i].detalles}"</p>
         <div class="counter" data-numero= "${[i]}">
             <button class="counterLeft" onclick="restarElemento(this)"
-            >--</button>
+            >-</button>
             <p id="cuenta">0</p>
             <button class="counterRight" onclick="sumarElemento(this)" 
-            >++</button>
+            >+</button>
         </div>
     </div>
 </div> `
